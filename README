@@ -1,0 +1,29 @@
+#Meteor
+- Los archivos ubicados en el clientdirectorio están configurando su
+ lado del cliente (web), puede ver, por ejemplo, client/main.jsxdónde
+  Meteor está representando el componente principal de su aplicación en el HTML.
+
+  -  server directorio donde Meteor está configurando el lado del servidor (Node.js),
+  puede ver que server/main.js
+  está inicializando su base de datos MongoDB con algunos datos
+
+  - Su código React se ubicará dentro del imports/uidirectorio, y el App.jsxarchivo es el
+   componente raíz de su aplicación React To-do.
+
+ - Tenga en cuenta que almacenamos el archivo en el imports/apidirectorio, que es un lugar
+ para almacenar código relacionado con la API, como publicaciones y métodos.
+ Puede nombrar esta carpeta como desee, esta es solo una elección.
+
+- Meteor funciona con paquetes Meteor y paquetes NPM, por lo general, los paquetes Meteor utilizan
+componentes internos de Meteor u otros paquetes Meteor.
+
+- La useTracker función exportada por react-meteor-dataes un React Hook que le permite tener reactividad
+ en sus componentes React. Cada vez que los datos cambian debido a la reactividad, su componente se volverá
+  a renderizar.
+
+- Puede conectarse a su MongoDB que se ejecuta meteor mongo en la terminal desde la carpeta de su aplicación
+
+- Pero espere, ¿cómo van mis tareas desde el servidor al cliente? Vamos a explicar esto más adelante, en el paso sobre Publicaciones y Suscripciones. Lo que necesita saber ahora es que está publicando todos los datos de la base de datos en el cliente. Esto se eliminará más adelante, ya que no queremos publicar todos los datos todo el tiempo.
+# Live templates webstrom
+
+- Create stateless component: rsc
